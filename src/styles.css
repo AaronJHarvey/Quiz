@@ -131,6 +131,11 @@ p {
 	font-size: 20px;
 }
 
+.question {
+	border: none;
+	padding-bottom: 0;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
