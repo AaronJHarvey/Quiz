@@ -117,6 +117,14 @@ input {
 	min-width: 55px;
 }
 
+.question-block {
+	text-align: left;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 5px;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
