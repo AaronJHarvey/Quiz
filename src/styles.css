@@ -167,8 +167,10 @@ address {
 	padding: 5px;
 }
 
-* {
-	scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
 }
 
 .sr-only {
