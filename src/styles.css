@@ -167,6 +167,10 @@ address {
 	padding: 5px;
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
