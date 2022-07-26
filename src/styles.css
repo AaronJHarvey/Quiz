@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}
+
 body {
 	background: #f5f6f7;
 	color: #1b1b32;
@@ -12,8 +18,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	top: 0;
 	position: fixed;
+	top: 0;
 }
 
 #logo {
@@ -27,10 +33,6 @@ h1 {
 	color: #f1be32;
 	font-size: min(5vw, 1.2em);
 	text-align: center;
-}
-
-main {
-	padding-top: 35px;
 }
 
 nav {
@@ -67,6 +69,16 @@ li > a {
 	text-decoration: none;
 }
 
+main {
+	padding-top: 50px;
+}
+
+section {
+	width: 80%;
+	margin: 0 auto 10px auto;
+	max-width: 600px;
+}
+
 h1,
 h2 {
 	font-family: Verdana, Tahoma;
@@ -74,35 +86,25 @@ h2 {
 
 h2 {
 	border-bottom: 4px solid #dfdfe2;
+	margin-top: 0px;
 	padding-top: 60px;
-	margin-top: 0;
-}
-
-p::before {
-	content: "Question #";
-}
-
-section {
-	width: 80%;
-	margin: 0 auto 10px;
-	max-width: 600px;
 }
 
 .info {
-	padding: 10px 0 0 10px;
+	padding: 10px 0 0 5px;
 }
 
 .formrow {
-	margin-top: 10px;
-	padding: 0 10px;
+	margin-top: 30px;
+	padding: 0px 15px;
 }
 
 input {
 	font-size: 16px;
 }
 
-.info input,
-.info label {
+.info label,
+.info input {
 	display: inline-block;
 	text-align: right;
 }
@@ -129,6 +131,10 @@ p {
 	margin-top: 5px;
 	padding-left: 15px;
 	font-size: 20px;
+}
+
+p::before {
+	content: "Question #";
 }
 
 .question {
@@ -159,18 +165,12 @@ footer {
 
 footer,
 footer a {
-	color: white;
+	color: #dfdfe2;
 }
 
 address {
 	text-align: center;
-	padding: 5px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	* {
-		scroll-behavior: smooth;
-	}
+	padding: 0.3em;
 }
 
 .sr-only {
